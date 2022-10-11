@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 export default function LibraSignos() {
     const [mes, setMes] = useState('');
     const [dia, setDia] = useState(0);
-    const [resp, setResp] = useState('---');
+    const [resp, setResp] = useState('');
 
     function signoLibra() {        
         if(dia < 1 || dia > 30){
