@@ -1,27 +1,89 @@
-.sc-1{
+.cont-main-vendaacai{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
 
-    .inp-1{
-        width: 20em;
-    }
+    width: 100%;
+    height: 100vh;;
+    background-color: chocolate;
 
-    .inp-2{
-        width: 20em;
-    }
+    textarea:focus, input:focus, select:focus {
+        box-shadow: 0 0 0 0;
+        border: 0 none;
+        border-bottom: 0.1px solid black;
+        outline: 0;
+    } 
 
-    .inp-3{
-        width: 20em;
-    }
+    .cont-inserir-acais{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 45em;
+        height: 29em;
 
-    .inp-4{
-        width: 20em;
+        border-radius: 20px;
+        border: 6px solid black;
     }
+    .tamanho-pequeno{
+        display: flex;
+        flex-direction: row;
+        width: 40em;
+        height: 3em;
+    }
+    .acai-pequeno{
+        font-size: 18px;
+    }
+    .qtd-pequeno{
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 0.1px solid black;
+    }
+    .tamanho-medio{
+        display: flex;
+        flex-direction: row;
+        width: 40em;
+        height: 3em;
+    }
+    .acai-medio{
+        font-size: 18px;
+    }
+    .qtd-medio{
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 0.1px solid black;
+    }
+    .tamanho-grande{
+        display: flex;
+        flex-direction: row;
+        width: 40em;
+        height: 3em;
+    }
+    .acai-grande{
+        font-size: 18px;
+    }
+    .qtd-grande{
+        background-color: transparent;
+        border: 0px;
+        border-bottom: 0.1px solid black;
+    }
+    .botao-calcular-acai{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
 
-    .bt-1{
-        margin-top: 2em;
-        width: 20em;
-        color: purple;
+        width: 10em;
+        height: 3em;
+        border: 1px solid white;
+        border-radius: 10px;
+        background-color: black;
+    }
+    .calc-acai{
+        font-size: 15px;
+        font-weight: 100;
+        color: white;
+        cursor: pointer;
     }
 }

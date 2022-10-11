@@ -9,9 +9,9 @@ export default function Index() {
     return(
         <BrowserRouter>
             <Routes>
-                <Route path="acai" element={<Acai/>}/>
-                <Route path="sorveteria" element={< Sorveteria/>} />
-                <Route path="signo" element={<Signo/>} />
+                <Route path="/acai" element={<Acai/>}/>
+                <Route path="/sorveteria" element={< Sorveteria/>} />
+                <Route path="/signo" element={<Signo/>} />
             </Routes>
         </BrowserRouter>
     )

@@ -1,52 +1,48 @@
-import './index.scss'
-import React, { useState } from 'react';
+import './index.scss';
+import { useState } from 'react';
 
 
-export default function VendaAçaí() {
-  
+export default function VendaAcai(){
+    const [pequeno, setPequeno] = useState();
+    const [medio, setMedio] = useState();
+    const [grande, setGrande] = useState();
 
+    function CalcularAcai(){
+        const acaiPeq = 13.5 * pequeno;
+        const acaiGra = 15 * grande;
+        const acaimed = 17.5 * medio;
+        const calc = acaiPeq + acaimed + acaiGra;
 
-    function calcular(qtdPeq, qtdMed, qtdGra, Desc){
-        let a = qtdPeq === 13.5;
-        let b = qtdMed === 15;
-        let c = qtdGra === 17.5;
-        let d = Desc * ( a + b + c) /100;
-
-        return d;
+        return calc;
     }
-    
-
 
     return(
-        <main>
-
-            <section className='sc-1'>
-
-                <h1> Bem vindo a Venda Açai !</h1>
-                <h5>
-                    ACAI PEQUENO
-                </h5>
-                <input className='inp-1' placeholder='Digite a quantidade'/>
-
-                <h5>
-                    ACAI MEDIO
-                </h5>
-                <input className='inp-2' placeholder='Digite a quantidade'/>
-
-                <h5>
-                    ACAI GRANDE
-                </h5>
-                <input className='inp-3' placeholder='Digite a quantidade'/>
-
-                <h5>
-                    DESCONTO
-                </h5>
-                <input className='inp-4' placeholder='Digite o desconto'/>
-
-                <button className='bt-1' value={calcular} onClick={e.target.value}>Calcular</button>
-
+        <main className='cont-main-vendaacai'>
+            <section className='cont-inserir-acais'>
+                <div className='tamanho-pequeno'>
+                    <h1 className='acai-pequeno'>
+                        PEQUENOS:
+                    </h1>
+                    <input className='qtd-pequeno' type='text' values={pequeno} onChange={e => setPequeno(e.target.value)}/>
+                </div>
+                <div className='tamanho-medio'>
+                    <h1 className='acai-medio'>
+                        MEDIOS:
+                    </h1>
+                    <input className='qtd-medio' type='text' values={medio} onChange={e => setMedio(e.target.value)}/>
+                </div>
+                <div className='tamanho-grande'>
+                    <h1 className='acai-grande'>
+                        GRANDES:
+                    </h1>
+                    <input className='qtd-grande' type='text' values={grande} onChange={e => setGrande(e.target.value)}/>
+                </div>
+                <button className='botao-calcular-acai'>
+                    <h1 className='calc-acai' onClick={CalcularAcai}>
+                            CALCULAR
+                    </h1>
+                </button>
             </section>
-
         </main>
-    )
+    ) 
 }
