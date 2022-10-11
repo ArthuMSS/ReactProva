@@ -7,6 +7,7 @@ import Sorveteria from './Pages/sorveteriaCalcular';
 import Salario from './Pages/salarioLiquido';
 import Paradas from './Pages/paradasAbastecimento';
 import Avaliacao from './Pages/avalieSituacao';
+import Febre from './Pages/avalieSuafebre';
 
 export default function Index() {
     return(
@@ -18,6 +19,7 @@ export default function Index() {
                 <Route path="/salario" element={<Salario/>} />
                 <Route path="/paradas" element={<Paradas/>} />
                 <Route path="/avaliacaoo" element={<Avaliacao/>} />
+                <Route path="/febre" element={<Febre/>} />
             </Routes>
         </BrowserRouter>
     )
