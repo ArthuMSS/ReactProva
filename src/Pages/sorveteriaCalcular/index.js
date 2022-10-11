@@ -6,10 +6,9 @@ export default function SorveteriaCalcular() {
 
     return(
 
-        <main>
+        <main className='cont-main-sorv'>
 
             <section>
-                <h1> Bem Vindo a Sorveteria Calculo!</h1>
             </section>
 
         </main>
