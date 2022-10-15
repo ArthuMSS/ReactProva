@@ -6,7 +6,7 @@ import Signo from './Pages/signoLibra';
 import Sorveteria from './Pages/sorveteriaCalcular';
 import Salario from './Pages/salarioLiquido';
 import Paradas from './Pages/paradasAbastecimento';
-import Avaliacao from './Pages/avalieSituacao';
+import Situacao from './Pages/avalieSituacao';
 import Febre from './Pages/avalieSuafebre';
 import Orcamento from './Pages/sitOrcamento';
 import Cinema from './Pages/cinema';
@@ -20,7 +20,7 @@ export default function Index() {
                 <Route path="/signo" element={<Signo/>} />
                 <Route path="/salario" element={<Salario/>} />
                 <Route path="/paradas" element={<Paradas/>} />
-                <Route path="/avaliacaoo" element={<Avaliacao/>} />
+                <Route path="/situacao" element={<Situacao/>} />
                 <Route path="/febre" element={<Febre/>} />
                 <Route path="/orc" element={<Orcamento/>} />
                 <Route path="/cinema" element={<Cinema/>} />
