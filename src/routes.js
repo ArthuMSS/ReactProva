@@ -1,15 +1,19 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Acai from './Pages/vendaAçai';
-import Signo from './Pages/signoLibra';
-import Sorveteria from './Pages/sorveteriaCalcular';
-import Salario from './Pages/salarioLiquido';
-import Paradas from './Pages/paradasAbastecimento';
-import Situacao from './Pages/avalieSituacao';
-import Febre from './Pages/avalieSuafebre';
-import Orcamento from './Pages/sitOrcamento';
-import Cinema from './Pages/cinema';
+import Acai from './Pages/BASICOS/vendaAçai';
+import Signo from './Pages/BASICOS/signoLibra';
+import Sorveteria from './Pages/BASICOS/sorveteriaCalcular';
+import Salario from './Pages/BASICOS/salarioLiquido';
+import Paradas from './Pages/BASICOS/paradasAbastecimento';
+import Situacao from './Pages/BASICOS/avalieSituacao';
+import Febre from './Pages/BASICOS/avalieSuafebre';
+import Orcamento from './Pages/BASICOS/sitOrcamento';
+import Cinema from './Pages/BASICOS/cinema';
+
+import Seq from './Pages/REPETICAO/seqNumeros';
+import Retangulo from './Pages/REPETICAO/retangulo';
+import SeqLinha from "./Pages/REPETICAO/seqLinhas";
 
 export default function Index() {
     return(
@@ -24,6 +28,10 @@ export default function Index() {
                 <Route path="/febre" element={<Febre/>} />
                 <Route path="/orc" element={<Orcamento/>} />
                 <Route path="/cinema" element={<Cinema/>} />
+
+                <Route path="/seq" element={<Seq/>}/>
+                <Route path="/ret" element={<Retangulo/>}/>
+                <Route path="/linha" element={<SeqLinha/>}/>
             </Routes>
         </BrowserRouter>
     )

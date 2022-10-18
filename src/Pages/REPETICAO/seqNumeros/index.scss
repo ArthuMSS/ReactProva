@@ -1,0 +1,43 @@
+.cont-main-seq{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+
+    width: 100%;
+    height: 100vh;
+
+    background-image: url("../../../assets/images/lousa.webp");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    .cont-card-seq{
+        width: 10em;
+        height: 30em;
+
+        margin-right: 2em;
+
+        border-radius: 20px;
+        border: 2px solid white;
+    }
+    .cont-resposta{
+        display: flex;
+        flex-direction: row;
+
+        color: white;
+
+        margin: 0px;
+
+        width: 8em;
+        height: 10em;
+        flex-wrap: wrap;
+
+        border: 0.1px solid white;
+    }
+    .resposta-itens{
+        width: max-content;
+        height: max-content;
+    }
+    .text-resp{
+        margin: 0px;
+    }
+}
