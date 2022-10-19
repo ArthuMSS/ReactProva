@@ -10,6 +10,8 @@ import Situacao from './Pages/BASICOS/avalieSituacao';
 import Febre from './Pages/BASICOS/avalieSuafebre';
 import Orcamento from './Pages/BASICOS/sitOrcamento';
 import Cinema from './Pages/BASICOS/cinema';
+import Principal from "./Pages/PRINCIPAL";
+import Desafio from './Pages/DESAFIO';
 
 import Seq from './Pages/REPETICAO/seqNumeros';
 import Retangulo from './Pages/REPETICAO/retangulo';
@@ -19,6 +21,7 @@ export default function Index() {
     return(
         <BrowserRouter>
             <Routes>
+                <Route path="/" element={<Principal/>}/>
                 <Route path="/acai" element={<Acai/>}/>
                 <Route path="/sorveteria" element={< Sorveteria/>} />
                 <Route path="/signo" element={<Signo/>} />
@@ -32,6 +35,8 @@ export default function Index() {
                 <Route path="/seq" element={<Seq/>}/>
                 <Route path="/ret" element={<Retangulo/>}/>
                 <Route path="/linha" element={<SeqLinha/>}/>
+
+                <Route path="/desafio" element={<Desafio/>}/>
             </Routes>
         </BrowserRouter>
     )
