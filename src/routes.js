@@ -16,6 +16,7 @@ import Desafio from './Pages/DESAFIO';
 import Seq from './Pages/REPETICAO/seqNumeros';
 import Retangulo from './Pages/REPETICAO/retangulo';
 import SeqLinha from "./Pages/REPETICAO/seqLinhas";
+import MediaEscola from "./Pages/mediaalunos";
 
 export default function Index() {
     return(
@@ -37,6 +38,7 @@ export default function Index() {
                 <Route path="/linha" element={<SeqLinha/>}/>
 
                 <Route path="/desafio" element={<Desafio/>}/>
+                <Route path="/media" element={<MediaEscola/>}/>
             </Routes>
         </BrowserRouter>
     )

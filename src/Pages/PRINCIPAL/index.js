@@ -47,6 +47,9 @@ export default function principal(){
             <Link to='/desafio'>
                 Desafiooo
             </Link>
+            <Link to='/media'>
+                Media Escola
+            </Link>
         </main>
     )
 }

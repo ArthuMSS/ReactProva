@@ -1,0 +1,13 @@
+.alunos{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 5em;
+    margin-right: 30px;
+    .text-alunos{
+        text-align: center;
+        margin: 0px;
+        font-size: 16px;
+        color: rgb(201, 201, 201);
+    }
+}
